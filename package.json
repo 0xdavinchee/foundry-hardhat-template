@@ -1,0 +1,56 @@
+{
+  "name": "foundry-hardhat-template",
+  "version": "0.0.1",
+  "description": "a foundry hardhat hybrid starter template",
+  "scripts": {
+    "test": "pnpm test",
+    "dev:hardhat": "nodemon -e sol,ts -x \"yarn test:hardhat\"",
+    "test:hardhat": "npx hardhat test",
+    "format": "pnpm npm-run-all -p format:*",
+    "format:sol": "prettier --write 'contracts/**/*.sol' --plugin=prettier-plugin-solidity",
+    "format:ts": "prettier --write '**/*.ts' --plugin=prettier-plugin-solidity"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xdavinchee/foundry-hardhat-template.git"
+  },
+  "keywords": [
+    "foundry",
+    "hardhat",
+    "solidity"
+  ],
+  "author": "0xdavinchee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xdavinchee/foundry-hardhat-template/issues"
+  },
+  "homepage": "https://github.com/0xdavinchee/foundry-hardhat-template#readme",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
+    "@typechain/ethers-v5": "^10.1.1",
+    "@typechain/hardhat": "^6.1.4",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.9",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.0",
+    "prettier-plugin-solidity": "^1.0.0",
+    "solidity-coverage": "^0.8.2",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.3"
+  }
+}
