@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/0xdavinchee/foundry-hardhat-template">
-    <img src="images/foundry-hardhat.jpeg" alt="Logo" width="420.69>
+    <img src="images/foundry-hardhat.jpeg" alt="Logo" width="420.69">
   </a>
 
   <h3 align="center">Hardhat TypeScript Template</h3>
