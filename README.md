@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/0xdavinchee/foundry-hardhat-template">
-    <img src="images/logo.png" alt="Logo" width="420.69">
+    <img src="images/foundry-hardhat.jpeg" alt="Logo" width="420.69>
   </a>
 
   <h3 align="center">Hardhat TypeScript Template</h3>
@@ -162,4 +162,3 @@ Project Link: [https://github.com/0xdavinchee/foundry-hardhat-template](https://
 [issues-url]: https://github.com/0xdavinchee/foundry-hardhat-template/issues
 [license-shield]: https://img.shields.io/github/license/0xdavinchee/foundry-hardhat-template.svg?style=for-the-badge
 [license-url]: https://github.com/0xdavinchee/foundry-hardhat-template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

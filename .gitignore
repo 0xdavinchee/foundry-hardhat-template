@@ -1,4 +1,4 @@
-#JS/TS files
+# JS/TS files
 node_modules
 .env
 coverage
@@ -6,6 +6,9 @@ coverage.json
 typechain
 typechain-types
 
-#Hardhat files
+# Hardhat files
 cache_hardhat
 artifacts
+
+# Foundry files
+cache
