@@ -29,7 +29,7 @@ contract LockTest is Test {
 
     function testCannotSetUnlockTimeInPast(uint64 _time) external {
         vm.assume(_time < block.timestamp);
-        vm.expectRevert(Lock.InvalidInitialUnlockTime.selector);
+        vm.expectRevert(Lock.InvalidUnlockTime.selector);
         new Lock(_time);
     }
 

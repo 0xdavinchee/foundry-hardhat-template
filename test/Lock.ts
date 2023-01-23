@@ -32,7 +32,7 @@ makeSuite("Lock", (testEnv: TestEnvironment) => {
             const Lock = await ethers.getContractFactory("Lock");
             await expect(
                 Lock.deploy(latestTime, { value: 1 })
-            ).to.be.revertedWithCustomError(Lock, "InvalidInitialUnlockTime");
+            ).to.be.revertedWithCustomError(Lock, "InvalidUnlockTime");
         });
     });
 
@@ -77,7 +77,7 @@ makeSuite("Lock", (testEnv: TestEnvironment) => {
 
                 await expect(lock.withdraw())
                     .to.emit(lock, "Withdrawal")
-                    .withArgs(lockedAmount, anyValue); // We accept any value as `when` arg
+                    .withArgs(lockedAmount); // We accept any value as `when` arg
             });
         });
 

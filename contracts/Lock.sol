@@ -40,10 +40,12 @@ contract Lock {
     /// @dev Reverts if non-owner or if still locked.
     function withdraw() external onlyOwner {
         if (block.timestamp < unlockTime) revert CannotWithdrawYet();
+        
+        uint256 balance = address(this).balance;
 
-        owner.transfer(address(this).balance);
+        owner.transfer(balance);
 
-        emit Withdrawal(address(this).balance);
+        emit Withdrawal(balance);
     }
 
     /// @notice Sets the unlock time for the withdrawal
